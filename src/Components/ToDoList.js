@@ -28,8 +28,10 @@ const handleChange = e =>{
 
 }
 
-   const remove =(id) =>{
-       console.log("remove");
+   const removeList =id =>{
+       const removeArr= [...list].filter(l=>l.id !==id);
+
+       setList(removeArr);
    }
     return(
 
@@ -39,7 +41,7 @@ const handleChange = e =>{
         <input onChange={handleChange}  type="text" name="todolist" id="todolist" placeholder="add item..." value={input}/>
         <button onClick={add}>Add</button>
         </form>
-        <  TodoItem list={list} romeve={remove}/> 
+        <  TodoItem list={list} removeList={removeList}/> 
 
 
                  </div>
