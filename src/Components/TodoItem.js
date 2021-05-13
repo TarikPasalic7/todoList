@@ -4,9 +4,9 @@ const TodoItem =({list,removeList})=>{
    
     return list.map((l,index)=>(
      
-         <div key={index}>
+         <div key={index} >
 
-         <div key={l.id} onClick={()=>removeList(l.id)} >
+         <div className="item" key={l.id} onClick={()=>removeList(l.id)} >
 
              {l.text}
          </div>

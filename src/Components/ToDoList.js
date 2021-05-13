@@ -64,12 +64,12 @@ const handleChange = e =>{
     return(
 
         <div className="listfrm">
-
+           <h2 className="font-family">To-Do List</h2>
         <form>
-        <input onChange={handleChange}  type="text" name="todolist" id="todolist" placeholder="add item..." value={input}/>
-        <button onClick={add}>Add</button>
+        <input className="inputTxt" onChange={handleChange}  type="text" name="todolist" id="todolist" placeholder="add item..." value={input}/>
+        <button className="btnAdd" onClick={add}>Add</button>
         </form>
-        <  TodoItem list={list} removeList={removeList}/> 
+        <  TodoItem  list={list} removeList={removeList}/> 
 
 
                  </div>

@@ -18,7 +18,42 @@ code {
   margin-top: 20px;
   display: inline-block;
   width: 300px;
-  height:450px;
-  background-color: rgb(130, 248, 207);
+  
+  min-height: 500px;
+  background-color: rgb(118, 190, 228);
   border-radius:20px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+ 
+  
+}
+.inputTxt{
+  width: 40%;
+  height: 20px;
+  margin-top: 80px;
+  margin-right: 10px;
+
+}
+.btnAdd{
+  background-color: rgb(71, 162, 41);
+  color: white;
+  border-radius: 7px;
+  width:30%;
+  height: 40px;
+  max-height: 100px;
+  border-color: white;
+  border-style: solid;
+  
+
+}
+.item{
+  background-color: rgb(17, 31, 106);
+  margin:20px 10px;
+  height: 30px;
+  border-radius:3px;
+  color: white;
+  box-shadow: 2px 5px 4px #222121;
+  
+}
+.font-family{
+  font-family:cursive
 }
