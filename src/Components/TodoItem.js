@@ -1,4 +1,4 @@
-import React, {useState} from 'react'; //rfce autogenerate component
+//rfce autogenerate component
 const TodoItem =({list,removeList})=>{
     
    

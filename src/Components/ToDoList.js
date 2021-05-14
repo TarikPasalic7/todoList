@@ -1,7 +1,7 @@
 import React, {useState,useEffect} from 'react';
 import TodoItem from './TodoItem';
 
-const ToDoList =(props)=>{
+const ToDoList =()=>{
 
     const [input,setInput] = useState("");
     const [list,setList] = useState([]);
@@ -14,19 +14,19 @@ const ToDoList =(props)=>{
         setList(JSON.parse(data));
     }
     
-    localStorage.setItem('listItem',JSON.stringify(list))
-   
+   // localStorage.setItem('listItem',JSON.stringify(list));
+  
 
-},[])
+},[]) //onmount
 
    useEffect(()=>{
        
         //localstorage
         
-        localStorage.setItem('listItem',JSON.stringify(list))
-       
+        localStorage.setItem('listItem',JSON.stringify(list));
+      
 
-    },)
+    },) //update everytime
     const add =(e) =>{
       e.preventDefault();
 

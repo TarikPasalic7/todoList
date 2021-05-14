@@ -22,8 +22,8 @@ code {
   min-height: 500px;
   background-color: rgb(118, 190, 228);
   border-radius:20px;
-  box-shadow: 10px 10px 5px #aaaaaa;
- 
+  box-shadow: 4px 4px 6px rgb(152, 155, 220)
+
   
 }
 .inputTxt{
@@ -56,4 +56,16 @@ code {
 }
 .font-family{
   font-family:cursive
+}
+
+.particles{
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: rgb(33, 9, 41);
+  
 }

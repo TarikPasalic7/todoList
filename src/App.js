@@ -1,11 +1,27 @@
 import ToDoList from "./Components/ToDoList";
-import TodoItem from "./Components/TodoItem";
+import Particles from "react-particles-js";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-     <ToDoList/>
+      <Particles  className="particles"
+              params={{
+            		particles: {
+            			line_linked: {
+            				shadow: {
+            					enable: true,
+            					color: "black",
+            					blur: 5
+            				}
+            			}
+            		}
+            	}}
+             
+            />
+                   
+                 
+     <ToDoList/> 
    
     </div>
   );
